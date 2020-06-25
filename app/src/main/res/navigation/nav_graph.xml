@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/luaChonFragment">
+    <fragment
+        android:id="@+id/luaChonFragment"
+        android:name="vn.edu.ntu.thanhnuong.hienthisms_content.LuaChonFragment"
+        android:label="fragment_lua_chon"
+        tools:layout="@layout/fragment_lua_chon" >
+        <action
+            android:id="@+id/action_luaChonFragment_to_SMSFragment"
+            app:destination="@id/SMSFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SMSFragment"
+        android:name="vn.edu.ntu.thanhnuong.hienthisms_content.SMSFragment"
+        android:label="fragment_sms"
+        tools:layout="@layout/fragment_sms" />
+</navigation>
